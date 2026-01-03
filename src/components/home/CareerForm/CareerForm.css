@@ -1,0 +1,156 @@
+.career-section {
+    background: var(--bg-white);
+    position: relative;
+    padding: 4rem 0;
+}
+
+.career-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.career-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.career-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.career-benefits {
+    display: grid;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.benefit-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background: rgba(14, 165, 233, 0.1);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.career-form-card {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+}
+
+.career-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #475569;
+}
+
+.career-form input,
+.career-form select,
+.career-form textarea {
+    padding: 0.7rem 1rem;
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    outline: none;
+    color: #0f172a;
+}
+
+.career-form input:focus,
+.career-form select:focus,
+.career-form textarea:focus {
+    border-color: var(--primary-color);
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.1);
+}
+
+.whatsapp-submit-btn {
+    margin-top: 0.5rem;
+    padding: 0.875rem;
+    background: #25d366;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-submit-btn:hover {
+    background: #20ba59;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-submit-btn i {
+    font-size: 1.4rem;
+}
+
+@media (max-width: 968px) {
+    .career-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .career-benefits {
+        justify-items: center;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .career-form-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .form-group-row {
+        grid-template-columns: 1fr;
+    }
+}

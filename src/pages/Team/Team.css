@@ -1,0 +1,154 @@
+.team-page {
+    /* Padding handled by main-layout */
+}
+
+.team-hero {
+    background: radial-gradient(circle at top right, #1e293b, #0f172a, #020617);
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.team-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.team-title .highlight {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.team-subtitle {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.team-section {
+    background: #f8fafc;
+    /* Professional light background to make cards pop */
+    padding: 100px 0;
+    position: relative;
+    z-index: 5;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: -80px;
+    /* Overlap with hero for modern look */
+    padding: 0 15px;
+}
+
+.member-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #f1f5f9;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: #60a5fa;
+}
+
+.member-image-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f8fafc;
+    border: 4px solid #f1f5f9;
+}
+
+.member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.member-card:hover .member-overlay {
+    opacity: 1;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links i {
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.social-links i:hover {
+    color: #60a5fa;
+}
+
+.member-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.member-bio {
+    font-size: 0.9375rem;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .team-hero {
+        padding: 50px 0;
+        /* Reduced padding from 100px to 50px */
+    }
+
+    .team-title {
+        font-size: 2.2rem;
+    }
+
+    .team-grid {
+        margin-top: 1.5rem;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+}
