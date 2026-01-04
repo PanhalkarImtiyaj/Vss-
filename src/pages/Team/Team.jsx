@@ -15,6 +15,10 @@ import ramImg from '../../assets/team-images/ram.jpeg';
 import tejasImg from '../../assets/team-images/tejas.png';
 import karunaImg from '../../assets/team-images/Karuna.png';
 import priyaImg from '../../assets/team-images/priya patil.png';
+import rashidPImg from '../../assets/team-images/Rashid.png';
+import radhikaImg from '../../assets/team-images/Radhika kulkarni HR.png';
+import sanikaImg from '../../assets/team-images/sanika madane.png';
+import abhishekImg from '../../assets/team-images/Abhishek Parekar.png';
 
 const Team = () => {
     const vssTeam = [
@@ -41,80 +45,87 @@ const Team = () => {
         },
         {
             id: 4,
+            name: "Rashid Sir",
+            role: "Business Development Head",
+            image: rashidPImg,
+            bio: "Driving growth and building strategic partnerships to expand VSS's global reach."
+        },
+        {
+            id: 5,
+            name: "Karuna Patil",
+            role: "Web Developer",
+            image: karunaImg,
+            bio: "Bridging the gap between code and management to deliver high-quality web projects."
+        },
+        {
+            id: 6,
+            name: "Sanika Madne",
+            role: "Android Developer",
+            image: sanikaImg,
+            bio: "Specializing in crafting smooth and efficient mobile experiences for Android platforms."
+        },
+        {
+            id: 7,
+            name: "Rameshwar Chate",
+            role: "Web Developer",
+            image: rameshwarImg,
+            bio: "Specialist in building modern and feature-rich web applications with a focus on user experience."
+        },
+        {
+            id: 8,
             name: "Ram Patil",
             role: "Technical Director & Android Developer",
             image: ramImg,
             bio: "Combining leadership with deep technical expertise in high-performance Android applications."
         },
         {
-            id: 5,
-            name: "Karuna Patil",
-            role: "Full Stack Developer",
-            image: karunaImg,
-            bio: "Bridging the gap between code and management to deliver high-quality web projects."
+            id: 9,
+            name: "Radhika Kulkarni",
+            role: "Human resources (HR)",
+            image: radhikaImg,
+            bio: "Managing talent acquisition and human resources to build a strong and dedicated team."
         },
         {
-            id: 6,
+            id: 10,
             name: "Mubina Mulla",
-            role: "Web Developer & Operational Head & Manager",
+            role: "Web Developer",
             image: mubinaImg,
             bio: "Multifaceted leader managing operations and development for maximum project efficiency."
         },
         {
-            id: 7,
-            name: "Rameshwar Chate",
-            role: "Android Developer",
-            image: rameshwarImg,
-            bio: "Specialist in creating feature-rich and intuitive mobile experiences on the Android platform."
-        },
-        {
-            id: 8,
-            name: "Pravin Singh",
+            id: 11,
+            name: "Abhishek Parekar",
             role: "Web Developer",
-            image: pravinImg,
-            bio: "Dedicated to solving complex problems through efficient and elegant web-based solutions."
+            image: abhishekImg,
+            bio: "Committed to delivering high-quality front-end and back-end web development services."
         },
         {
-            id: 9,
+            id: 12,
             name: "Priya Patil",
             role: "Chief Operating Officer & Data Engineer",
             image: priyaImg,
             bio: "Ensuring smooth operations while architecting robust data-driven solutions for clients."
         },
         {
-            id: 10,
+            id: 13,
             name: "Aditya Patil",
-            role: "Web Developer",
+            role: "Android Developer",
             image: adityaImg,
             bio: "Focusing on building modern and feature-rich web applications with a focus on user experience."
         },
         {
-            id: 11,
-            name: "Tejas Jadhav",
-            role: "Web Developer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=TejasJ",
-            bio: "Passionate about building responsive, user-friendly, and scalable web applications."
-        },
-        {
-            id: 12,
+            id: 14,
             name: "Aman Korbu",
-            role: "Web Developer & Tech Manager",
+            role: "Full Stack Developer",
             image: amanImg,
             bio: "Expertly managing technical workflows while developing cutting-edge web technologies."
         },
         {
-            id: 13,
-            name: "Mansi",
-            role: "Web Developer & UI/UX / Marketing Head",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Mansi",
-            bio: "Crafting beautiful interfaces while leading our digital marketing and brand strategy."
-        },
-        {
-            id: 14,
-            name: "Abhishek Parekar",
+            id: 15,
+            name: "Pravin Singh",
             role: "Web Developer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Abhishek",
-            bio: "Committed to delivering high-quality front-end and back-end web development services."
+            image: pravinImg,
+            bio: "Dedicated to solving complex problems through efficient and elegant web-based solutions."
         }
     ];
 

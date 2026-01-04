@@ -18,14 +18,14 @@ const About = () => {
             <div className="about-content-section fade-in-up">
               <h2 className="section-heading">Who We Are</h2>
               <p className="content-text">
-                VSS Software Solutions is a leading software development company founded in 2014 
-                with a mission to empower businesses through innovative technology solutions. 
-                We specialize in creating custom software that drives growth, efficiency, and 
+                VSS Software Solutions is a leading software development company founded in 2014
+                with a mission to empower businesses tHRough innovative technology solutions.
+                We specialize in creating custom software that drives growth, efficiency, and
                 competitive advantage.
               </p>
               <p className="content-text">
-                With over a decade of experience and a team of 50+ talented professionals, 
-                we've successfully delivered 500+ projects across various industries including 
+                With over a decade of experience and a team of 50+ talented professionals,
+                we've successfully delivered 500+ projects across various industries including
                 healthcare, finance, e-commerce, education, and more.
               </p>
             </div>
@@ -33,8 +33,8 @@ const About = () => {
             <div className="about-content-section fade-in-up">
               <h2 className="section-heading">Our Mission</h2>
               <p className="content-text">
-                To deliver world-class software solutions that transform businesses and create 
-                lasting value for our clients. We strive to be the most trusted technology 
+                To deliver world-class software solutions that transform businesses and create
+                lasting value for our clients. We strive to be the most trusted technology
                 partner by consistently exceeding expectations and driving innovation.
               </p>
             </div>
@@ -47,50 +47,62 @@ const About = () => {
           <h2 className="section-heading text-center mb-4">Why Choose Us</h2>
           <div className="features-grid">
             <div className="feature-card fade-in-up">
-              <div className="feature-icon-large">🎯</div>
+              <div className="feature-icon-wrapper">
+                <i className='bx bx-target-lock'></i>
+              </div>
               <h3 className="feature-title">Client-Focused Approach</h3>
               <p className="feature-text">
-                We prioritize understanding your unique business needs and deliver 
+                We prioritize understanding your unique business needs and deliver
                 tailored solutions that align with your goals.
               </p>
             </div>
             <div className="feature-card fade-in-up">
-              <div className="feature-icon-large">⚡</div>
+              <div className="feature-icon-wrapper">
+                <i className='bx bx-rocket'></i>
+              </div>
               <h3 className="feature-title">Agile Development</h3>
               <p className="feature-text">
-                Our agile methodology ensures flexibility, faster delivery, and 
-                continuous improvement throughout the project lifecycle.
+                Our agile methodology ensures flexibility, faster delivery, and
+                continuous improvement tHRoughout the project lifecycle.
               </p>
             </div>
             <div className="feature-card fade-in-up">
-              <div className="feature-icon-large">🏆</div>
+              <div className="feature-icon-wrapper">
+                <i className='bx bx-check-shield'></i>
+              </div>
               <h3 className="feature-title">Quality Assurance</h3>
               <p className="feature-text">
-                Rigorous testing and quality control processes ensure bug-free, 
+                Rigorous testing and quality control processes ensure bug-free,
                 high-performance applications.
               </p>
             </div>
             <div className="feature-card fade-in-up">
-              <div className="feature-icon-large">💡</div>
+              <div className="feature-icon-wrapper">
+                <i className='bx bx-bulb'></i>
+              </div>
               <h3 className="feature-title">Innovation First</h3>
               <p className="feature-text">
-                We stay ahead of technology trends and leverage cutting-edge tools 
+                We stay ahead of technology trends and leverage cutting-edge tools
                 to build future-ready solutions.
               </p>
             </div>
             <div className="feature-card fade-in-up">
-              <div className="feature-icon-large">🤝</div>
+              <div className="feature-icon-wrapper">
+                <i className='bx bx-group'></i>
+              </div>
               <h3 className="feature-title">Long-term Partnership</h3>
               <p className="feature-text">
-                We build lasting relationships with our clients, providing ongoing 
+                We build lasting relationships with our clients, providing ongoing
                 support and maintenance.
               </p>
             </div>
             <div className="feature-card fade-in-up">
-              <div className="feature-icon-large">🔒</div>
+              <div className="feature-icon-wrapper">
+                <i className='bx bx-lock-alt'></i>
+              </div>
               <h3 className="feature-title">Security & Privacy</h3>
               <p className="feature-text">
-                We implement industry-standard security practices to protect your 
+                We implement industry-standard security practices to protect your
                 data and ensure compliance.
               </p>
             </div>

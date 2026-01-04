@@ -611,22 +611,45 @@
   .mobile-expert-btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.3rem;
-    padding: 0.4rem 0.6rem;
+    padding: 0.5rem 0.75rem;
     background: var(--gradient-primary);
     color: white;
     font-size: 0.75rem;
     font-weight: 700;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 12px rgba(14, 165, 233, 0.25);
     white-space: nowrap;
     -webkit-tap-highlight-color: transparent;
-    user-select: none;
   }
 
-  .mobile-expert-btn i {
-    font-size: 1rem;
+  .mobile-expert-btn span {
+    display: inline-block;
+  }
+
+  @media (max-width: 400px) {
+    .logo-image {
+      height: 32px;
+      max-width: 130px;
+    }
+
+    .mobile-expert-btn {
+      padding: 0.5rem;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+    }
+
+    .mobile-expert-btn span {
+      display: none;
+    }
+
+    .mobile-expert-btn i {
+      font-size: 1.25rem;
+      margin: 0;
+    }
   }
 
   .navbar-menu,

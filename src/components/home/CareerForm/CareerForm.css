@@ -2,6 +2,8 @@
     background: var(--bg-white);
     position: relative;
     padding: 6rem 0;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll from this section */
 }
 
 .career-container {
@@ -11,6 +13,7 @@
     align-items: center;
     max-width: 1150px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .career-info {
@@ -23,12 +26,14 @@
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 800;
     line-height: 1.1;
+    margin: 0;
 }
 
 .career-subtitle {
     font-size: 1.15rem;
     color: var(--text-secondary);
     line-height: 1.8;
+    margin: 0;
 }
 
 .career-benefits {
@@ -56,6 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .career-form-card {
@@ -64,24 +70,29 @@
     border-radius: 30px;
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
     border: 1px solid #f1f5f9;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .career-form {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    width: 100%;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    width: 100%;
 }
 
 .form-group-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.25rem;
+    width: 100%;
 }
 
 .form-group label {
@@ -99,10 +110,11 @@
     border-radius: 12px;
     font-family: inherit;
     font-size: 1rem;
-    /* Prevent mobile zoom */
     transition: all 0.3s ease;
     outline: none;
     color: #0f172a;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .career-form input:focus,
@@ -129,6 +141,7 @@
     transition: all 0.3s ease;
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+    width: 100%;
 }
 
 .whatsapp-submit-btn:hover {
@@ -137,50 +150,108 @@
     box-shadow: 0 12px 24px rgba(37, 211, 102, 0.4);
 }
 
+/* Responsive Styles */
 @media (max-width: 968px) {
     .career-section {
-        padding: 4rem 0;
+        padding: 4rem 1rem;
+        /* Consistent side padding */
     }
 
     .career-container {
         grid-template-columns: 1fr;
-        gap: 4rem;
+        gap: 3.5rem;
         text-align: center;
     }
 
     .career-info {
         align-items: center;
+        max-width: 100%;
     }
 
     .career-subtitle {
         max-width: 600px;
+        margin: 0 auto;
     }
 
     .career-benefits {
         justify-items: center;
         width: 100%;
         max-width: 500px;
+        margin: 1.5rem auto 0;
     }
 
     .benefit-item {
         width: 100%;
         justify-content: flex-start;
         background: #f8fafc;
-        padding: 1rem;
-        border-radius: 16px;
+        padding: 1.25rem;
+        border-radius: 20px;
+        max-width: 450px;
     }
 
     .career-form-card {
-        padding: 2rem 1.5rem;
+        padding: 2.5rem 1.5rem;
+        border-radius: 24px;
+        max-width: 600px;
+        margin: 0 auto;
     }
 }
 
-@media (max-width: 500px) {
-    .form-group-row {
-        grid-template-columns: 1fr;
+@media (max-width: 768px) {
+    .career-section {
+        padding-bottom: 120px !important;
+        /* Fixed bottom nav space */
+    }
+}
+
+@media (max-width: 600px) {
+    .career-section {
+        padding: 3rem 0.75rem;
     }
 
     .career-info h2 {
-        font-size: 2.25rem;
+        font-size: clamp(2rem, 8vw, 2.5rem);
+    }
+
+    .career-subtitle {
+        font-size: 1rem;
+    }
+
+    .form-group-row {
+        grid-template-columns: 1fr;
+        /* Single column for form fields */
+        gap: 1.25rem;
+    }
+
+    .career-form-card {
+        padding: 2rem 1.25rem;
+    }
+
+    .benefit-item {
+        font-size: 1rem;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .benefit-item i {
+        width: 44px;
+        height: 44px;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .career-section {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .career-form-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .whatsapp-submit-btn {
+        font-size: 1rem;
+        padding: 0.875rem;
     }
 }

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { portfolioData } from '../../data/portfolioData';
 import './Portfolio.css';
-
 const Portfolio = () => {
   const [filter, setFilter] = useState('All');
 

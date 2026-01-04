@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { servicesData } from '../../data/servicesData';
 import { gsap, useGSAP, ScrollTrigger } from '../../utils/gsap';
-import './Services.css';
+
 
 const Services = () => {
   const container = useRef();
@@ -147,7 +147,7 @@ const Services = () => {
                 <div className="step-number">5</div>
                 <h3 className="step-title">Testing</h3>
                 <p className="step-description">
-                  We ensure quality through rigorous testing and QA processes.
+                  We ensure quality tHRough rigorous testing and QA processes.
                 </p>
               </div>
               <div className="process-step">

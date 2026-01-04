@@ -124,7 +124,7 @@ const Navbar = () => {
           <div className="navbar-mobile-actions">
             <Link to="/talk-to-experts" className="mobile-expert-btn" onClick={closeMenu}>
               <i className='bx bx-headphone'></i>
-              Talk to Experts
+              <span>Talk to Experts</span>
             </Link>
           </div>
 
@@ -181,48 +181,10 @@ const Navbar = () => {
                 )}
               </div>
 
-              <div
-                className="navbar-dropdown"
-                onMouseEnter={() => handleMouseEnter('portfolio')}
-                onMouseLeave={handleMouseLeave}
-              >
-                <button className={`navbar-link dropdown-trigger ${location.pathname === '/portfolio' ? 'active' : ''}`}>
-                  <i className='bx bx-briefcase'></i>
-                  Portfolio
-                  <svg className="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
-                    <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </button>
-
-                {activeDropdown === 'portfolio' && (
-                  <div className="dropdown-menu">
-                    <div className="dropdown-grid plans-grid">
-                      {portfolioItems.map((item) => (
-                        <Link
-                          key={item.id}
-                          to={item.link}
-                          className="dropdown-card"
-                          onClick={closeMenu}
-                        >
-                          <div className="card-image">
-                            <img src={item.image} alt={item.title} />
-                          </div>
-                          <div className="card-content">
-                            <h3 className="card-title">{item.title}</h3>
-                            <p className="card-description">{item.description}</p>
-                            <span className="card-link">
-                              View Projects
-                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                              </svg>
-                            </span>
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
+              <NavLink to="/portfolio" className="navbar-link" onClick={closeMenu}>
+                <i className='bx bx-briefcase'></i>
+                Portfolio
+              </NavLink>
 
               <NavLink to="/team" className="navbar-link" onClick={closeMenu}>
                 <i className='bx bx-group'></i>

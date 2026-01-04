@@ -37,7 +37,7 @@ export const servicesData = [
     features: ['iOS & Android', 'Cross-Platform', 'Native Performance', 'User-Friendly'],
     benefits: [
       'Direct engagement with your customers.',
-      'Enhanced brand loyalty through personalized experiences.',
+      'Enhanced brand loyalty tHRough personalized experiences.',
       'Offline capabilities for uninterrupted usage.',
       'Push notifications to keep users active and informed.'
     ]
@@ -150,7 +150,7 @@ export const servicesData = [
     benefits: [
       'Reduced development time with clear design blueprints.',
       'Higher user retention and satisfaction.',
-      'Brand differentiation through unique aesthetics.',
+      'Brand differentiation tHRough unique aesthetics.',
       'Intuitive navigation reducing user training costs.'
     ]
   }

@@ -14,12 +14,12 @@ const Footer = () => {
               Transforming ideas into powerful digital solutions. Your trusted partner for innovative software development.
             </p>
             <div className="footer-social">
-              <a href="#" className="social-link">LinkedIn</a>
-              <a href="#" className="social-link">Twitter</a>
-              <a href="#" className="social-link">Facebook</a>
-              <a href="#" className="social-link">Instagram</a>
+              <a HRef="#" className="social-link">LinkedIn</a>
+              <a HRef="#" className="social-link">Twitter</a>
+              <a HRef="#" className="social-link">Facebook</a>
+              <a HRef="#" className="social-link">Instagram</a>
             </div>
-          </div>
+          </div >
 
           <div className="footer-section">
             <h4 className="footer-title">Quick Links</h4>
@@ -51,17 +51,17 @@ const Footer = () => {
               <li>📍 123 Tech Street, Silicon Valley, CA 94025</li>
             </ul>
           </div>
-        </div>
+        </div >
 
         <div className="footer-bottom">
           <p>&copy; {currentYear} VSS Software Solutions. All rights reserved.</p>
           <div className="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+            <a HRef="#">Privacy Policy</a>
+            <a HRef="#">Terms of Service</a>
+          </div >
+        </div >
+      </div >
+    </footer >
   );
 };
 
