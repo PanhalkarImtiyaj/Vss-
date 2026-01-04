@@ -28,6 +28,8 @@ const Navbar = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
     setActiveDropdown(null);
+    // Scroll to top when navigating
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const toggleMobileServices = (e) => {
@@ -62,28 +64,28 @@ const Navbar = () => {
       title: 'Website Development',
       description: 'Custom, responsive websites built with modern technologies.',
       image: webNav,
-      link: '/services'
+      link: '/services/website-development'
     },
     {
       id: 2,
       title: 'Mobile App Development',
       description: 'Native and cross-platform mobile applications for iOS and Android.',
       image: mobileNav,
-      link: '/services'
+      link: '/services/mobile-app-development'
     },
     {
       id: 3,
       title: 'ERP & Billing Software',
       description: 'Comprehensive enterprise solutions to streamline operations.',
       image: erpNav,
-      link: '/services'
+      link: '/services/erp-billing-software'
     },
     {
       id: 4,
       title: 'UI/UX Design',
       description: 'Beautiful, intuitive designs that create memorable experiences.',
       image: uiuxNav,
-      link: '/services'
+      link: '/services/ui-ux-design'
     }
   ];
 
@@ -279,16 +281,10 @@ const Navbar = () => {
 
       {/* Mobile Bottom Navigation */}
       <div className="mobile-bottom-nav">
-        <div className="mobile-nav-curve">
-          <svg width="100%" height="100%" viewBox="0 0 375 80" preserveAspectRatio="none">
-            <path d="M0,0 L137.5,0 C137.5,0 150,0 150,15 C150,35 150,55 187.5,55 C225,55 225,35 225,15 C225,0 237.5,0 237.5,0 L375,0 L375,80 L0,80 Z" fill="#ffffff" />
-          </svg>
-        </div>
-
         <div className="mobile-nav-items">
           <NavLink to="/" className="mobile-nav-item">
             <div className="nav-icon">
-              <i className='bx bx-home-alt'></i>
+              <i className='bx bx-home-alt-2'></i>
             </div>
             <span className="nav-label">Home</span>
           </NavLink>
@@ -302,10 +298,7 @@ const Navbar = () => {
 
           <div className="mobile-nav-center">
             <button className="center-fab" onClick={toggleMobileServices}>
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-              </svg>
+              <i className='bx bx-plus'></i>
             </button>
           </div>
 

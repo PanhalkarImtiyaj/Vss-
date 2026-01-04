@@ -3,7 +3,7 @@
 }
 
 .page-hero {
-  background: var(--gradient-primary);
+  background: radial-gradient(circle at top right, #1e293b, #0f172a, #020617);
   color: var(--text-light);
   padding: 5rem 0;
   text-align: center;

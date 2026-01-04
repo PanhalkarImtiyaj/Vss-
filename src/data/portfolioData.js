@@ -1,31 +1,36 @@
+import eliteJobImg from '../assets/products-images/Elite Job prtovider.png';
+import eliteMembersImg from '../assets/products-images/Elite Members.png';
+import eliteHotelImg from '../assets/products-images/Elite hotel Job.png';
+import allDealImg from '../assets/products-images/AllDeal24.png';
+
 export const portfolioData = [
+  {
+    id: 4,
+    title: 'AllDeal Property Seller',
+    category: 'Mobile App',
+    description: 'Real estate marketplace for buying, selling, and renting properties with virtual tours.',
+    image: allDealImg
+  },
   {
     id: 1,
     title: 'Elite Job Provider',
     category: 'Mobile App',
     description: 'A comprehensive recruitment platform connecting employers with top talent efficiently.',
-    image: '💼'
+    image: eliteJobImg
   },
   {
     id: 2,
     title: 'Elite Members App',
     category: 'Mobile App',
     description: 'Exclusive membership management application with loyalty rewards and event tracking.',
-    image: '🌟'
+    image: eliteMembersImg
   },
   {
     id: 3,
     title: 'Elite Hotel Jobs',
     category: 'Mobile App',
     description: 'Specialized job portal for the hospitality industry connecting hotels with skilled staff.',
-    image: '🏨'
-  },
-  {
-    id: 4,
-    title: 'AllDeal Property Seller',
-    category: 'Mobile App',
-    description: 'Real estate marketplace for buying, selling, and renting properties with virtual tours.',
-    image: '🏘️'
+    image: eliteHotelImg
   },
   {
     id: 5,
@@ -54,13 +59,6 @@ export const portfolioData = [
     category: 'Web Development',
     description: 'Informational and e-commerce platform for sustainable agriculture and ecology.',
     image: '🌱'
-  },
-  {
-    id: 9,
-    title: 'Expert Guruji',
-    category: 'Mobile App',
-    description: 'Educational platform for students providing high-quality learning resources and courses.',
-    image: '🎓'
   },
   {
     id: 10,

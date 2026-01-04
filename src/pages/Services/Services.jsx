@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { servicesData } from '../../data/servicesData';
 import { gsap, useGSAP, ScrollTrigger } from '../../utils/gsap';
 import './Services.css';
@@ -91,6 +92,17 @@ const Services = () => {
                       ))}
                     </ul>
                   </div>
+                  <Link to={`/services/${service.slug}`} className="learn-more-link" style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    color: 'var(--primary-color)',
+                    fontWeight: '600',
+                    marginTop: '1rem',
+                    fontSize: '1.1rem'
+                  }}>
+                    Learn More <i className='bx bx-right-arrow-alt'></i>
+                  </Link>
                 </div>
               </div>
             ))}

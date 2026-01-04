@@ -4,105 +4,117 @@ import { useGSAP } from '../../utils/gsap';
 import { gsap } from 'gsap';
 import './Team.css';
 
+import imtiyajImg from '../../assets/team-images/imtiyaj.png';
+import shanvajImg from '../../assets/team-images/shanvaj director.png';
+import rameshwarImg from '../../assets/team-images/Rameshwar.jpeg';
+import adityaImg from '../../assets/team-images/aditya patil.jpg';
+import amanImg from '../../assets/team-images/aman.jpeg';
+import mubinaImg from '../../assets/team-images/mubina.png';
+import pravinImg from '../../assets/team-images/pravin-singh.png';
+import ramImg from '../../assets/team-images/ram.jpeg';
+import tejasImg from '../../assets/team-images/tejas.png';
+import karunaImg from '../../assets/team-images/Karuna.png';
+import priyaImg from '../../assets/team-images/priya patil.png';
+
 const Team = () => {
-    const teamMembers = [
+    const vssTeam = [
         {
             id: 1,
             name: "Imtiyaj Panhalkar",
             role: "Founder & CEO",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Imtiyaj",
+            image: imtiyajImg,
             bio: "Visionary leader driving VSS towards global excellence in software solutions and innovation."
         },
         {
             id: 2,
             name: "Shahanvaj Panhalkar",
             role: "Director",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Shahanvaj",
+            image: shanvajImg,
             bio: "Strategist focusing on business growth, operational excellence, and long-term startup vision."
         },
         {
             id: 3,
             name: "Tejas Karekar",
-            role: "CTO & Android Developer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=TejasK",
+            role: "Chief Technology Officer",
+            image: tejasImg,
             bio: "Technical powerhouse leading our technology stack and mobile development initiatives."
         },
         {
             id: 4,
-            name: "Priya Patil",
-            role: "Chief Operating Officer & Data Engineer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Priya",
-            bio: "Ensuring smooth operations while architecting robust data-driven solutions for clients."
-        },
-        {
-            id: 5,
             name: "Ram Patil",
             role: "Technical Director & Android Developer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Ram",
+            image: ramImg,
             bio: "Combining leadership with deep technical expertise in high-performance Android applications."
         },
         {
+            id: 5,
+            name: "Karuna Patil",
+            role: "Full Stack Developer",
+            image: karunaImg,
+            bio: "Bridging the gap between code and management to deliver high-quality web projects."
+        },
+        {
             id: 6,
+            name: "Mubina Mulla",
+            role: "Web Developer & Operational Head & Manager",
+            image: mubinaImg,
+            bio: "Multifaceted leader managing operations and development for maximum project efficiency."
+        },
+        {
+            id: 7,
+            name: "Rameshwar Chate",
+            role: "Android Developer",
+            image: rameshwarImg,
+            bio: "Specialist in creating feature-rich and intuitive mobile experiences on the Android platform."
+        },
+        {
+            id: 8,
+            name: "Pravin Singh",
+            role: "Web Developer",
+            image: pravinImg,
+            bio: "Dedicated to solving complex problems through efficient and elegant web-based solutions."
+        },
+        {
+            id: 9,
+            name: "Priya Patil",
+            role: "Chief Operating Officer & Data Engineer",
+            image: priyaImg,
+            bio: "Ensuring smooth operations while architecting robust data-driven solutions for clients."
+        },
+        {
+            id: 10,
+            name: "Aditya Patil",
+            role: "Web Developer",
+            image: adityaImg,
+            bio: "Focusing on building modern and feature-rich web applications with a focus on user experience."
+        },
+        {
+            id: 11,
             name: "Tejas Jadhav",
             role: "Web Developer",
             image: "https://api.dicebear.com/7.x/avataaars/svg?seed=TejasJ",
             bio: "Passionate about building responsive, user-friendly, and scalable web applications."
         },
         {
-            id: 7,
-            name: "Rameshwar Chate",
-            role: "Android Developer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Rameshwar",
-            bio: "Specialist in creating feature-rich and intuitive mobile experiences on the Android platform."
-        },
-        {
-            id: 8,
-            name: "Karuna Patil",
-            role: "Web Developer & Manager",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Karuna",
-            bio: "Bridging the gap between code and management to deliver high-quality web projects."
-        },
-        {
-            id: 9,
+            id: 12,
             name: "Aman Korbu",
             role: "Web Developer & Tech Manager",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Aman",
+            image: amanImg,
             bio: "Expertly managing technical workflows while developing cutting-edge web technologies."
         },
         {
-            id: 10,
-            name: "Pravin Singh",
-            role: "Web Developer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Pravin",
-            bio: "Dedicated to solving complex problems through efficient and elegant web-based solutions."
-        },
-        {
-            id: 11,
+            id: 13,
             name: "Mansi",
             role: "Web Developer & UI/UX / Marketing Head",
             image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Mansi",
             bio: "Crafting beautiful interfaces while leading our digital marketing and brand strategy."
         },
         {
-            id: 12,
-            name: "Mubina Mulla",
-            role: "Web Developer & Operational Head & Manager",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Mubina",
-            bio: "Multifaceted leader managing operations and development for maximum project efficiency."
-        },
-        {
-            id: 13,
+            id: 14,
             name: "Abhishek Parekar",
             role: "Web Developer",
             image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Abhishek",
             bio: "Committed to delivering high-quality front-end and back-end web development services."
-        },
-        {
-            id: 14,
-            name: "Aditya Patil",
-            role: "Web Developer",
-            image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Aditya",
-            bio: "Focusing on building modern and feature-rich web applications with a focus on user experience."
         }
     ];
 
@@ -131,17 +143,10 @@ const Team = () => {
             <section className="team-section section">
                 <div className="container">
                     <div className="team-grid">
-                        {teamMembers.map((member) => (
+                        {vssTeam.map((member) => (
                             <div key={member.id} className="member-card">
                                 <div className="member-image-wrapper">
                                     <img src={member.image} alt={member.name} className="member-image" />
-                                    <div className="member-overlay">
-                                        <div className="social-links">
-                                            <i className='bx bxl-linkedin'></i>
-                                            <i className='bx bxl-twitter'></i>
-                                            <i className='bx bxl-github'></i>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div className="member-info">
                                     <h3 className="member-name">{member.name}</h3>

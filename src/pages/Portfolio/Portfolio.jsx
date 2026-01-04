@@ -40,7 +40,11 @@ const Portfolio = () => {
             {filteredProjects.map((project) => (
               <div key={project.id} className="portfolio-card fade-in-up">
                 <div className="portfolio-image">
-                  <span className="project-emoji">{project.image}</span>
+                  {typeof project.image === 'string' && (project.image.includes('/') || project.image.includes('data:')) ? (
+                    <img src={project.image} alt={project.title} className="project-image" />
+                  ) : (
+                    <span className="project-emoji">{project.image}</span>
+                  )}
                 </div>
                 <div className="portfolio-content">
                   <span className="project-category">{project.category}</span>

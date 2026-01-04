@@ -2,6 +2,25 @@
   /* Padding handled by main-layout */
 }
 
+.page-hero {
+  background: radial-gradient(circle at top right, #1e293b, #0f172a, #020617);
+  color: #ffffff;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.page-title {
+  font-size: var(--font-size-5xl);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.page-subtitle {
+  font-size: var(--font-size-xl);
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .services-list {
   display: flex;
   flex-direction: column;

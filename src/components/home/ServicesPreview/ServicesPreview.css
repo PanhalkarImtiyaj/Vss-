@@ -107,10 +107,11 @@
 }
 
 .service-title {
-  font-size: 1.25rem;
+  font-size: 1.95rem !important;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.75rem;
+  line-height: 1.2;
 }
 
 .service-description {
@@ -143,11 +144,44 @@
 }
 
 @media (max-width: 768px) {
-  .services-grid {
-    grid-template-columns: 1fr;
+  .section {
+    padding: 3rem 0;
   }
 
   .section-title {
-    font-size: var(--font-size-3xl);
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+
+  .section-description {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    border-radius: 16px;
+  }
+
+  .service-card-content {
+    padding: 1.5rem;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.875rem;
+  }
+
+  .section-description {
+    font-size: 0.9375rem;
+  }
+
+  .service-card-content {
+    padding: 1.25rem;
   }
 }

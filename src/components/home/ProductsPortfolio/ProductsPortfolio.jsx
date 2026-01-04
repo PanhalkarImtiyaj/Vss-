@@ -22,7 +22,11 @@ const ProductsPortfolio = () => {
                     {featuredProducts.map((product) => (
                         <div key={product.id} className="product-card">
                             <div className="product-icon-wrapper">
-                                <span className="product-emoji">{product.image}</span>
+                                {typeof product.image === 'string' && (product.image.includes('/') || product.image.includes('data:')) ? (
+                                    <img src={product.image} alt={product.title} className="product-image" />
+                                ) : (
+                                    <span className="product-emoji">{product.image}</span>
+                                )}
                             </div>
                             <div className="product-content">
                                 <span className="product-category">{product.category}</span>
